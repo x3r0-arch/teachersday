@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf3">
+  <meta name="description" content="Open a little thank-you note from one of your students.">
+  <title>A little note for you — Teacher's Day</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="messages-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="For the Ones Who Teach home">
+      <span class="brand-mark" aria-hidden="true">✿</span>
+      <span>Launsina</span>
+    </a>
+    <a class="header-back" href="index.html" aria-label="Back to all teachers"><span aria-hidden="true">←</span></a>
+  </header>
+
+  <main class="messages-main">
+    <section class="messages-intro">
+      <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back to all teachers</a>
+      <h1 id="teacher-title">A little love, <em>just for you</em><span class="hero-period">.</span></h1>
+      <p class="hero-description messages-tagline">Adviser</p>
+    </section>
+
+    <section class="students-section" aria-label="Student messages">
+      <div class="students-heading">
+        <h2>Message from your <em>student</em></h2>
+      </div>
+      <div class="student-grid" id="student-grid"></div>
+    </section>
+  </main>
+
+  <dialog class="message-dialog" id="message-dialog" aria-label="Student message">
+    <button class="dialog-close" type="button" aria-label="Close message">×</button>
+    <div class="dialog-flower" aria-hidden="true">✿</div>
+    <p class="dialog-message" id="dialog-message"></p>
+    <div class="dialog-signoff" id="dialog-signature"></div>
+    <span class="dialog-spark" aria-hidden="true">✳</span>
+  </dialog>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">✿</span><span>Launsina</span></a>
+    <p>11 Launsina</p>
+  </footer>
+  <script src="messages.js"></script>
+</body>
+</html>
